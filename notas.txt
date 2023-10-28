@@ -1,0 +1,6 @@
+=== Conectarme mediante SSH a consola de AWS ===
+ssh -i "My_NumberKey.pem" ec2-user@ec2-34-219-62-120.us-west-2.compute.amazonaws.com
+
+
+///==== encender servidor nginx ====
+///sudo systemctl status nginx
