@@ -1,4 +1,21 @@
-=== Conectarme mediante SSH a consola de AWS ===
+====
+Primer Proceso
+====
+Shopify creara el webhook que enviara la información al endpoint/url
+
+crear servidor con nginx/ngrok
+crear API con Flask o FastAPI que sera el endpoint
+Encender servidor Nginx y correr API
+
+- RunInstances
+- CreateSecurityGroup
+- AuthorizeSecurityGroupIngress
+
+
+
+===
+Conectarme mediante SSH a consola de AWS
+===
 ssh -i "My_NumberKey.pem" ec2-user@ec2-34-219-62-120.us-west-2.compute.amazonaws.com
 
 

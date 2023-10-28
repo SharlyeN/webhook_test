@@ -1,18 +1,11 @@
-from flask import Flask, request
-
+from flask import Flask
 
 app = Flask(__name__)
 
+@app.route("/")
+def hello():
+    return "Hola mundo desde NGINX y AWS"
 
-@app.route('/webhook', methods=['POST'])
-def webhook():
-    # Aquí manejarás la lógica de tu webhook
-    # Puedes acceder a los datos recibidos en request.data
-    data = request.data
-    # Realiza las acciones necesarias con los datos del webhook
-    # ...
-    return 'Webhook recibido con éxito', 200
-
-
-if __name__ == '__main__':
+if __name__ == "__main__":
     app.run(host='0.0.0.0', port=8000)
+
